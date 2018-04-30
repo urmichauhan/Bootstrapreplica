@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Replica</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="navbar.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="component" >
+          <center><h1 class="heading" style="order:1">Navbar Component</h1>
+          </br>
+          <nav class="navbar" style="order:2;">
+            <a class="navs n1" type="button" href="#" style="order:1">Navbar</a> 
+          <ul style="order:2">
+            <li><a class="navs n2" href="#">Home</a></li>
+               
+            <li><a class="navs n3" href="#">Link</a></li>
+                
+            <li><a class="navs n4" id="dd" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="drop" id="dropdown" aria-labelledby="dd">
+                <a href="#" class="dropitem">Action</a></br>
+                <a href="#" class="dropitem">Another action</a></br>
+                <div class="dropdiv"></div></br>
+                <a href="#" class="dropitem">Something else here</a>
+                </div></li>
+
+            <li><a class="navs n5" id="dis" onclick="return false"  href="index.html" style="color:#336699;">Disabled</a></li>     
+              
+            <form class="navs n6" style="order:3;">
+              <input class="srch" type="search" placeholder="Search" aria-label="Search" style="order:1">
+              <button class="btn" type="submit" style="order:2">Search</button>
+            </form>
+          </ul>
+          </nav>
+
+          </center>
+        </div>    
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
+</html>
+

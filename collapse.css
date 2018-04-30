@@ -1,0 +1,103 @@
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 2vw;
+}
+.component {
+    box-shadow: 3px 5px 1.5px 1px #000000;
+    min-height:90vh;
+    width:90vw;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    padding-left: 2vw;
+    
+}
+.component .heading {
+    
+    text-shadow: 3px 2px 1px #99FFCC ; 
+    font-size: 3.5rem;
+    color: #003333;
+    font-family: "Courier New", monospace;
+}
+.component .link {
+
+}
+.links .btn {
+    margin-left: 2vw;
+    height: 10vh;
+    width: 40vw;
+    border-radius: 13px;
+    background-color: #66CCCC;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #6633CC;
+    font-family: "Courier New", monospace;
+}
+.c {
+    box-shadow: 5px 3px 1px 2px #33CC99;
+    color: #663333;
+}
+.component .collapse {
+    margin-left: 2vw;
+    width: 40vw;
+    height:auto;
+    background-color: #CCCCFF ;
+    border-radius: 6px;
+}
+.component .collapse .para {
+    font-family: "Luminari", fantasy ; 
+    font-weight: 150;
+    font-size: 1rem;
+    color: #6600FF;
+    padding: 5vw 5vw 5vw 2vw;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 842px) {
+    .component .heading {
+        font-size: 3.4rem;
+    }
+    .links .btn {
+        font-size: 1.4rem;
+        height: 9vh;
+    }
+    .component .collapse .para {
+        font-size: 0.9rem;
+    }
+
+}
+@media only screen and (min-width: 460px) and (max-width: 599px) {
+    .component .heading {
+        font-size: 3rem;
+    }
+    .links .btn {
+        font-size: 1.3rem;
+        height: 8vh;
+    }
+    .component .collapse .para {
+        font-size: 0.9rem;
+    }
+
+}
+@media only screen and (min-width: 300px) and (max-width: 459px) {
+    .component .heading {
+        font-size: 1.8rem;
+    }
+    .links .btn {
+        font-size: 1rem;
+        height: 6vh;
+    }
+    .component .collapse .para {
+        font-size: 0.7rem;
+    }
+
+}

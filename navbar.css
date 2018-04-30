@@ -1,0 +1,158 @@
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 2vw;
+}
+.component {
+    box-shadow: 3px 5px 1.5px 1px #000000;
+    min-height:90vh;
+    width:auto;
+    height: auto;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    padding-left: 2vw;
+    
+}
+.component .heading {
+    padding-top: 3vh;
+    text-shadow: 3px 2px 1px #99FFCC ; 
+    font-size: 3rem;
+    color: #003333;
+    font-family: "Courier New", monospace;
+}
+.component .navbar {
+    display: flex;
+    flex-direction:row;
+    height:8vh;
+    width: auto;
+    border-color: #330066;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 1vw;   
+    list-style: none;
+    font-size: 1rem;
+    border-color: #CCCCFF;
+    border-width: 5px;
+    overflow-wrap: none;
+}    
+.navbar .navs {
+    font-size: 1.5rem;
+    font-weight: 800;
+    visibility: none;
+    margin-right: 3vw;
+    text-decoration-line: none;
+    color: #330066;
+    font-family: "Courier",monospace;
+}
+.navbar ul{
+    list-style-position:left;
+    list-style: none;
+    list-style-type: none;
+    display: inline-flex;
+}
+.n3:hover {
+    color:#006699;
+}
+
+
+.drop {
+    align-content: center;
+    background-color:#9999FF ; 
+    display:block;
+    border-radius: 10px;
+    position:relative;s
+    width: 8rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+}
+.drop:show {
+    display:block;
+    
+}
+.dropitem {
+    margin: 1vw;
+    text-decoration-line: none;
+    display:block;
+    clear:both;
+    font-weight:400;
+    color:#6633CC;
+    text-align:inherit;
+    white-space:nowrap;
+    background-color:transparent;
+}
+.navbar .n6 {
+    display: flex;
+    flex-direction: row;
+}
+.n6 .srch {
+    border-radius: 5px;
+    border-color: #CCCCFF;
+    border-width: 2px;  
+    font-size: 1rem;
+    width:18vw;
+    height: 6vh; 
+    margin-right: 1vw;
+    margin-left: 5vw;
+    font-family: "Courier",monospace;
+}
+.n6 .btn {
+    font-family: "Courier",monospace;
+    border-radius: 5px;
+    border-color: #006633;
+    border-width: 1px; 
+    color: #006633; 
+    font-size: 1.2rem;
+    width:auto;
+    height: 6vh;
+}
+.n6 .btn:hover {
+    color: #ffffff; 
+    background-color:  #006633;
+    
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 1050px) {
+    .component .heading {
+        font-size: 3.4rem;
+    }
+    .component .navbar { 
+        flex-direction:column;
+    }
+    .navbar ul {
+        display:table-column-group;
+    }
+    .navbar ul li {
+        padding-top: 3vh;
+    }
+    .navs {
+        font-size: 1.2rem;
+    }
+    .drop {
+        font-size: 0.9rem;
+    }
+    .navbar .n6 {
+        flex-direction: column;
+    }
+    .n6 .srch {
+        font-size: 0.9rem;
+        margin: 1vw;
+    }
+    .n6 .btn {
+        font-size: 0.8rem;
+        margin: 1vw;
+
+    }
+}

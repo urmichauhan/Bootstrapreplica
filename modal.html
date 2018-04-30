@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Replica</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="modal.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+      <div class="component" style="display:flex;flex-flow: column;">
+         
+        <center><h1 class="heading" style="order:1">Modal component</h1></center>
+        
+          <button type="button" id="btnclick" class="btn" data-toggle="modal" data-target="#modalid">
+            Launch demo modal
+          </button>
+
+          <div class="modal" id="modalid" tabindex="-1" role="dialog" aria-labelledby="lable">
+              <div class="modaldiv" style="display: flex;flex-direction:column;">
+                <div class="modalheader" style="order:1;">
+                  <h5 class="title" id="lable" style="align-self:flex-start;">Modal title</h5>
+                  <button type="button" id="closetop" class="btnclose" data-dismiss="modal" aria-label="Close" style="">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modalbody" style="order:2;">
+                  
+                </div>
+                <div class="modalfooter" style="display: flex;flex-direction:row;order:3;height:20vh;">
+                  <button type="button" class="btnc" id="closebtn" style="order:1;">Close</button>
+                  <button type="button" class="btnc" style="order:2">Save changes</button>
+                </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="modal.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

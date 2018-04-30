@@ -1,0 +1,194 @@
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 2vw;
+}
+.component {
+    box-shadow: 3px 5px 1.5px 1px #000000;
+    min-height:90vh;
+    width:auto;
+    height: auto;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    padding-left: 2vw;
+    
+}
+.component .heading {
+    padding-top: 3vh;
+    text-shadow: 3px 2px 1px #99FFCC ; 
+    font-size: 3rem;
+    color: #003333;
+    font-family: "Courier New", monospace;
+}
+.component .btn {
+    background-color: #3333CC;
+    color: #FFFFFF;
+    padding: 1vw;
+    font-family: "Helvetica", sans-serif ;
+    border-radius: 5px; 
+    font-size: 0.9rem;
+    width:14vw;
+    height: 7vh;
+}
+.component .btn:hover {
+    background-color: #333399;
+    cursor: pointer; 
+}
+
+.modal {
+    margin-left: 35vw;
+    width:40vw;
+    height:50vh; 
+    background-color: #999999;
+    opacity: 1;
+    transition: opacity .5s linear;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal .modaldiv {
+     color:#003366;
+     font-family: "Optima", sans-serif;
+     font-size:1rem;
+     font-weight: 300;
+}
+
+.modaldiv .modaheader {
+    display:flex;
+    flex-direction:row;
+    width:40vw;
+    height:15vh;
+}
+
+.modalheader .title {
+    padding-left:0.5vw;
+}
+.modaldiv .modalheader .btnclose {
+    color: #003366;
+    font-family: "Helvetica", sans-serif ;
+    border-radius: 10px; 
+    font-size: 1rem;
+    width:4vw;
+    height: 4vh;
+    margin-left:33vw;
+
+}
+.modaldiv .modalbody {
+    height:15vh;
+    padding-top:10vh;
+    padding-left:3vw;
+}
+
+.modaldiv .modalfooter {
+    height:15vh;
+    padding-top: 12vh;
+}
+
+
+.modalfooter .btnc {
+    background-color: #3333CC;
+    color: #FFFFFF;
+    font-family: "Helvetica", sans-serif ;
+    border-radius: 10px; 
+    font-size: 0.8rem;
+    width:9vw;
+    height: 6vh;
+    margin-right: 1vw;
+    margin-left:2vw;
+}
+
+
+@media only screen and (min-width: 730px) and (max-width: 900px) {
+    .modaldiv .modalheader .btnclose {
+        margin-left:25vw;
+    }
+    .modaldiv .modalfooter {
+        padding-top: 7vh;
+    }
+    .modalfooter .btnc { 
+        font-size: 0.9rem;
+        margin-left:1vw;
+        width:9vw;
+        height:4vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 729px) {
+    .modaldiv .modalheader .btnclose {
+        margin-left:24vw;
+    }
+    .modaldiv .modalfooter {
+        padding-top: 7vh;
+    }
+    .modalfooter .btnc { 
+        font-size: 0.9rem;
+        margin-left:1vw;
+        width:11vw;
+        height:4vh;
+    }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 599px) {
+    .component .heading { 
+        font-size: 2rem;
+    }
+    .component .btn {
+        font-size: 0.9rem;
+        width:18vw;
+        height: 9vh;
+    }
+
+    .modaldiv .modalheader .btnclose {
+        margin-left:21vw;
+        font-size: 0.8rem;
+    }
+    .modaldiv .modalfooter {
+        padding-top: 7vh;
+    }
+    .modalfooter .btnc { 
+        font-size: 0.8rem;
+        margin-left:1vw;
+        width:17vw;
+        height:6vh;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 429px) {
+    .component .heading { 
+        font-size: 2rem;
+    }
+    .component .btn {
+        font-size: 0.9rem;
+        width:18vw;
+        height: 9vh;
+    }
+
+    .modaldiv .modalheader .btnclose {
+        margin-left:19vw;
+        font-size: 0.8rem;
+    }
+    .modaldiv .modalfooter {
+        padding-top: 7vh;
+    }
+    .modalfooter .btnc { 
+        font-size: 0.7rem;
+        margin-left:1vw;
+        width:17vw;
+        height:6vh;
+    }
+}

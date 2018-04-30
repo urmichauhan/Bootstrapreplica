@@ -1,0 +1,70 @@
+
+
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+.component {
+
+    box-shadow: 3px 5px 1.5px 1px #000000;
+    height: 80vh;
+    width:90vw;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    padding-left: 4vw;
+}
+.component .heading {
+    
+    text-shadow: 3px 2px 1px #99FFCC ; 
+    font-size: 5rem;
+    color: #003333;
+    font-family: "Courier New", monospace;
+}
+.component a {
+    font-family: "Bradley Hand", cursive ;
+    visibility: none;
+    color: #006666 ;
+    text-decoration: none;
+    padding-bottom: 2vh;
+    font-size: 2rem;
+}
+.component a:hover {
+    border-radius: 10px;
+    box-shadow: 2px 3px 1px 1px #339999; 
+    visibility: none;
+    color: #003333  ;
+    text-decoration: line-through;
+}
+
+
+@media only screen and (min-width: 532px) and (max-width: 842px) {
+    .component .heading {
+        font-size: 3rem;
+    }
+    .component a {
+        font-size: 1.7rem;
+    }
+
+}
+@media only screen and (min-width: 300px) and (max-width: 531px) {
+    .component .heading {
+        font-size: 2rem;
+    }
+    .component a {
+        font-size: 1.5rem;
+    }
+
+}
+
