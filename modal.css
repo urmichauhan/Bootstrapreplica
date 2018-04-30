@@ -46,7 +46,7 @@ body {
 .modal {
     margin-left: 35vw;
     width:40vw;
-    height:50vh; 
+    height:60vh; 
     background-color: #999999;
     opacity: 1;
     transition: opacity .5s linear;
@@ -69,8 +69,7 @@ body {
 }
 
 .modaldiv .modaheader {
-    display:flex;
-    flex-direction:row;
+    
     width:40vw;
     height:15vh;
 }
@@ -85,7 +84,7 @@ body {
     font-size: 1rem;
     width:4vw;
     height: 4vh;
-    margin-left:33vw;
+    margin-left:35vw;
 
 }
 .modaldiv .modalbody {

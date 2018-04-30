@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-      <div class="component" style="display:flex;flex-flow: column;">
+      <div class="component" style="display:flex;flex-flow:column;">
          
         <center><h1 class="heading" style="order:1">Modal component</h1></center>
         
@@ -23,9 +23,9 @@
 
           <div class="modal" id="modalid" tabindex="-1" role="dialog" aria-labelledby="lable">
               <div class="modaldiv" style="display: flex;flex-direction:column;">
-                <div class="modalheader" style="order:1;">
-                  <h5 class="title" id="lable" style="align-self:flex-start;">Modal title</h5>
-                  <button type="button" id="closetop" class="btnclose" data-dismiss="modal" aria-label="Close" style="">
+                <div class="modalheader" style="order:1;display:flex;flex-direction:row;">
+                  <h5 class="title" id="lable" style="order:1">Modal title</h5>
+                  <button type="button" id="closetop" class="btnclose" data-dismiss="modal" aria-label="Close" style="order:2">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
